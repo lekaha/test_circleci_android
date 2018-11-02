@@ -37,4 +37,9 @@ class HelloWorldTest {
     fun greeting_isNotCorrect() {
         assertThat(helloWorld.greeting.get(), `not`("Hi"))
     }
+
+    @Test
+    fun greeting_isNotCorrect_error_sample() {
+        assertThat(helloWorld.greeting.get(), `not`(GREETING))
+    }
 }
